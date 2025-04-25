@@ -13,8 +13,7 @@ def train(n: int) -> None:
     train_fraction = 0.99
     data_train, data_test = dataset.split(train_fraction)
 
-    print(f"Training size: {len(data_train)}")
-    print(f"Test size: {len(data_test)}")
+    print(f"Dataset: train_size = {len(data_train)}, test_size = {len(data_test)}")
 
     models_dirpath = Path(__file__).parent / "models"
     models_dirpath.mkdir(parents=True, exist_ok=True)
@@ -22,10 +21,10 @@ def train(n: int) -> None:
     model = Model(n)
 
     print()
-    print(f"Training model with n={n}")
+    print(f"Training model with n={n}...")
     model.train(data_train)
 
-    print(f"Evaluating model with n={n}")
+    print(f"Evaluating model with n={n}...")
     accuracy = model.evaluate(data_test)
     print(f"Accuracy: {accuracy:.2}")
 

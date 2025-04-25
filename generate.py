@@ -29,7 +29,7 @@ def generate(n: int, length: int, prefix: str, seed: Optional[int]) -> None:
     prefix = prefix if prefix is not None else ""
 
     generated = model.generate(length, prefix)
-    print(generated)
+    print(prefix + generated)
 
 
 if __name__ == "__main__":
@@ -43,7 +43,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--length",
         type=int,
-        default=300,
+        default=100,
         help="Length of the generated text",
     )
     parser.add_argument(
