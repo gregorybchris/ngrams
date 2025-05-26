@@ -118,7 +118,7 @@ And no
 
 You can play around with the `--length`, `--seed`, and `--prefix` options to change the length of text generated, the random seed, and the prefix text from which to start generating.
 
-Now that you've got a handle on generation, let's play around with different values of `n`. You can run `python train.py -n 3` to train a different n-gram model then run `python generate.py -n 3` to test it. Test with different values of `n` and see what you notice about the quality of generated text.
+Now that you've got a handle on generation, let's play around with different values of `n`. You can run `python train.py -n 1` to train a different n-gram model then run `python generate.py -n 1` to test it. Test with different values of `n` and see what you notice about the quality of generated text.
 
 ## Problem 4 (extra credit)
 
