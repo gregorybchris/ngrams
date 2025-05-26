@@ -116,6 +116,7 @@ class Model:
 
         total = len(data) - self.n
         accuracy = n_correct / total
+        print(f"n={self.n}, accuracy={accuracy:.4f}")
         return accuracy
 
     @classmethod

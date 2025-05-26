@@ -87,8 +87,7 @@ If training completes successfully you should see the following output in your t
 Dataset: train_size = 1104240, test_size = 11154
 
 Training model with n=4...
-Evaluating model with n=4...
-Accuracy: 0.45
+Model saved to ./models/model-n4.pkl
 ```
 
 You should also see a trained model file show up in the [models](./models) folder called [model-n4.pkl](./models/model-n4.pkl). We can't do anything with it quite yet, but we will in the next problem.
@@ -134,6 +133,22 @@ So how do you choose `n`? One way is through "hyperparameter tuning" a process t
 In this problem you'll iterate over possible values of `n` (from 1 to `max_n`), train a model with each value of `n`, evaluate the accuracy of each, and return the value of `n` that maximizes accuracy.
 
 Run `python grade.py p4` to check your solution.
+
+Now try running `python tune.py`. If your solution is correct you should see the following output in your terminal:
+
+```rb
+Dataset: train_size = 1104240, test_size = 11154
+
+Tuning hyperparameters with max_n=7...
+n=1, accuracy=0.1564
+n=2, accuracy=0.2677
+n=3, accuracy=0.3802
+n=4, accuracy=0.4488
+n=5, accuracy=0.4547
+n=6, accuracy=0.4164
+n=7, accuracy=0.3596
+Best model found with n=5
+```
 
 Hyperparameter tuning can be very slow and resource intensive. The best AI researchers have very good intuitions about how to set hyperparameters without tuning and these intuitions help save massive time and resources when training cutting edge large language models.
 

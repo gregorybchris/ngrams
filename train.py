@@ -24,12 +24,10 @@ def train(n: int) -> None:
     print(f"Training model with n={n}...")
     model.train(data_train)
 
-    print(f"Evaluating model with n={n}...")
-    accuracy = model.evaluate(data_test)
-    print(f"Accuracy: {accuracy:.2}")
-
-    model_filepath = models_dirpath / f"model-n{n}.pkl"
+    model_filename = f"model-n{n}.pkl"
+    model_filepath = models_dirpath / model_filename
     model.save(model_filepath)
+    print(f"Model saved to ./models/{model_filename}")
 
 
 if __name__ == "__main__":
