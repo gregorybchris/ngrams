@@ -1,7 +1,10 @@
+import logging
 import pickle
 import random
 from pathlib import Path
 from typing import Self
+
+logger = logging.getLogger(__name__)
 
 
 class Model:
@@ -116,7 +119,7 @@ class Model:
 
         total = len(data) - self.n
         accuracy = n_correct / total
-        print(f"n={self.n}, accuracy={accuracy:.4f}")
+        logger.info(f"n={self.n}, accuracy={accuracy:.4f}")
         return accuracy
 
     @classmethod

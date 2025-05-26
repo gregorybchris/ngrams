@@ -1,4 +1,5 @@
 import argparse
+import logging
 import random
 from pathlib import Path
 from typing import Optional
@@ -9,6 +10,8 @@ from model import Model
 
 def tune(max_n: int, seed: Optional[int]) -> None:
     """Tune the hyperparameter of an n-gram model."""
+    logging.basicConfig(level=logging.INFO)
+
     if seed is not None:
         random.seed(seed)
 
