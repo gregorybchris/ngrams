@@ -140,13 +140,13 @@ Now try running `python tune.py`. If your solution is correct you should see the
 Dataset: train_size = 1104240, test_size = 11154
 
 Tuning hyperparameters with max_n=7...
-INFO:model:n=1, accuracy=0.1564
-INFO:model:n=2, accuracy=0.2677
-INFO:model:n=3, accuracy=0.3802
-INFO:model:n=4, accuracy=0.4488
-INFO:model:n=5, accuracy=0.4547
-INFO:model:n=6, accuracy=0.4164
-INFO:model:n=7, accuracy=0.3596
+n=1, accuracy=0.1564
+n=2, accuracy=0.2677
+n=3, accuracy=0.3802
+n=4, accuracy=0.4488
+n=5, accuracy=0.4547
+n=6, accuracy=0.4164
+n=7, accuracy=0.3596
 Best model found with n=5
 ```
 

@@ -10,7 +10,7 @@ from model import Model
 
 def tune(max_n: int, seed: Optional[int]) -> None:
     """Tune the hyperparameter of an n-gram model."""
-    logging.basicConfig(level=logging.INFO)
+    logging.basicConfig(level=logging.INFO, format="%(message)s")
 
     if seed is not None:
         random.seed(seed)
