@@ -4,6 +4,10 @@ Introduction to generative language modeling using an n-gram model.
 
 This project is an assignment for the Park Tudor data science class. See [assignment.md](./assignment.md) for detailed instructions.
 
+## Requirements
+
+This repo requires Python 3.12 or later. There are no additional dependencies.
+
 ## Files
 
 | Name                                           | Description                                     |
